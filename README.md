@@ -1,15 +1,15 @@
 # GrasshopperArsenal
 
-Snippets of Grasshopper GHXs to share / play with.
+Grasshopper GHXs to share / play with.
 
 ## ROBUST:
 
-* MetaDataWriter: Writing and reading metadata into Rhino geometry
-* SlackNotifier: Posting to Slack with Grasshopper & Slack Web API
+* **MetaDataWriter**: Writing and reading metadata into Rhino geometry
+* **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
 
 ## Experimental:
 
-* CameraTracer: Turns scribbles, captured via the webcam, into polylines
+* **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
 
 
 #### Troubleshooting:
