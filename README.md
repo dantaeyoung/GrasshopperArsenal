@@ -6,6 +6,8 @@ Grasshopper GHXs to share / play with.
 
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
 * **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
+* **TimerLocker**: Enable/Disable timers with Grasshopper Boolean values
+* **GeometrySelector**: Select Geometry with the mouse and send that info to others
 
 ## Experimental:
 
