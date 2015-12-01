@@ -13,10 +13,13 @@ Grasshopper GHXs to share / play with.
 
 * **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
 
+#### Setup:
+
+Before running the scripts,
+* Install IronPython: http://ironpython.net/
+* Run 'EditPythonScript' in Rhino; under Tools > Options, and in the 'Script Engine' tab, make sure that 'Frames Enabled' is checked.
 
 #### Troubleshooting:
-
-* Run 'EditPythonScript' in Rhino; under Tools > Options, and in the 'Script Engine' tab, make sure that 'Frames Enabled' is checked.
 
 * If you get the error: ` 'ScopeStorage' object has no attribute 'scriptcontext' `, Restart Rhino.
 
