@@ -2,6 +2,8 @@
 
 Grasshopper GHXs to share / play with.
 
+If you'd like to add, please send a pull request.
+
 ## ROBUST:
 
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
