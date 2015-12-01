@@ -8,7 +8,7 @@ Grasshopper GHXs to share / play with.
 * **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
 * **TimerLocker**: Enable/Disable timers with Grasshopper Boolean values
 * **GeometrySelector**: Select Geometry with the mouse and send that info to others
-* **SwivelFigures**: Place scale figures and rotate them to align with camera
+* **SwivelFigures**: Place scale figures and rotate them to align with camera, Sketchup-Style
 ![SwivelFigures.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/SwivelFigures/SwivelFigures.gif)
 * **JsonReader**: Read JSON data from web APIS (and display lat/long info)
 * **GisReader**: Read GIS shapefiles as Rhino geometry (using [localcode/finches](https://github.com/localcode/finches))
