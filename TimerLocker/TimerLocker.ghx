@@ -37,7 +37,7 @@
           <items count="3">
             <item name="Date" type_name="gh_date" type_code="8">635838220438651826</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
-            <item name="Name" type_name="gh_string" type_code="10">TimerLocker_v1.ghx</item>
+            <item name="Name" type_name="gh_string" type_code="10">TimerLocker.ghx</item>
           </items>
           <chunks count="3">
             <chunk name="Revisions">
@@ -48,10 +48,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>201</X>
-                  <Y>109</Y>
+                  <X>-22</X>
+                  <Y>-151</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">0.64</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -73,9 +73,9 @@
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
-            <item name="ObjectCount" type_name="gh_int32" type_code="3">7</item>
+            <item name="ObjectCount" type_name="gh_int32" type_code="3">8</item>
           </items>
-          <chunks count="7">
+          <chunks count="8">
             <chunk name="Object" index="0">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">2e78987b-9dfb-42a2-8b76-3923ac8bd91a</item>
@@ -90,7 +90,7 @@
                     <item name="NickName" type_name="gh_string" type_code="10">Boolean Toggle</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="ToggleValue" type_name="gh_bool" type_code="1">true</item>
+                    <item name="ToggleValue" type_name="gh_bool" type_code="1">false</item>
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
@@ -114,7 +114,7 @@
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="10">
+                  <items count="11">
                     <item name="Description" type_name="gh_string" type_code="10">Provides a mechanism for updating solutions at specified intervals.</item>
                     <item name="InstanceGuid" type_name="gh_guid" type_code="9">312ad3d8-bd9d-4d7b-92f6-eaafc13718f8</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">true</item>
@@ -123,15 +123,16 @@
                     <item name="NickName" type_name="gh_string" type_code="10">Timer</item>
                     <item name="Target" index="0" type_name="gh_guid" type_code="9">42a91f5b-a687-48e4-bd5e-dc4feccb50f5</item>
                     <item name="Target" index="1" type_name="gh_guid" type_code="9">a62b44cc-328b-4afa-b416-9f14c604966f</item>
-                    <item name="TargetCount" type_name="gh_int32" type_code="3">2</item>
+                    <item name="Target" index="2" type_name="gh_guid" type_code="9">a0992f15-eecb-4622-9a4c-2e3abe9be274</item>
+                    <item name="TargetCount" type_name="gh_int32" type_code="3">3</item>
                     <item name="TimerInterval" type_name="gh_int32" type_code="3">2000</item>
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
                       <items count="1">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>123</X>
-                          <Y>400</Y>
+                          <X>177</X>
+                          <Y>357</Y>
                           <W>100</W>
                           <H>24</H>
                         </item>
@@ -143,122 +144,12 @@
             </chunk>
             <chunk name="Object" index="2">
               <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">079bd9bd-54a0-41d4-98af-db999015f63d</item>
-                <item name="Name" type_name="gh_string" type_code="10">TimerLocker</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="9">
-                    <item name="Description" type_name="gh_string" type_code="10">Locks timer attached to it
-</item>
-                    <item name="EditorPosition" type_name="gh_drawing_point" type_code="30">
-                      <X>4</X>
-                      <Y>108</Y>
-                    </item>
-                    <item name="IconOverride" type_name="gh_drawing_bitmap" type_code="37">
-                      <bitmap length="1058">iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOvwAADr8BOAVTJAAAA8RJREFUSEudlUtIW1EQhm0qTaKGtNGkDQRrQONbaopIpWsXLkTBhS7cdCtS6EYREamomxpQURRdGHShbsSq+EbFRxUftb5foBaR2FJarNFSLNP5z7VpXhrbgZ/cnDPnm3tm5pzr58PusBSs+6wQ1kOWnqW7+q9i+bP+2QBWKRSKx2wvkpKS3prN5o9xcXFnERERxL9f4+PjPxiNxtchISFP2fcB69aB7rH0UVFRBQkJCaeZmZnnNTU1NDk5SVtbW3R8fEyrq6vU29tLeXl5pzExMRcmk8mqUqlMvE4pCDeYUqPRxCQmJr5PT0//MTY2RjabzaHW1lYh57Ht7W0E+s6BjvR6/XNmBEkoT5MDzlv/XFxc/Ovo6Ei8rbNaWlrIarV6jEMNDQ2XHOSbTqd7xizUzcVkSqXSwClZLy0tFfD/EafyMjY29lAulxuZeVdCS6bmnJdnZWVdHBwc0OHhoU/t7u7S0tISbWxsuIzn5ubaIyMjLWBKaH57LlAkR7ajkPv7+z4F6PDwMKWlpdH8/LzL3OzsLKHwnO5oZotdBISGhuZnZ2fb9/b2yJeWl5epvb2duH2pqKhI/Hf3ycnJsYeFhb0EGwE0nPt3jY2NtLOz41XoFKRjZmYGxSSuFxkMBpqenhZz7v7Nzc0EJtgIoOU/tpGREdrc3PQqpMFisVBwcDCxvxB3Gi0uLnr1B4u78QRsBHjERfkJSH19PdXV1dH6+rqLUBuukwPu7+9P4+PjtLa25uKHtWCABSbYjgBzc3NUW1uLVqOVlRUXARYUFOQIIJPJqKurixYWFlz8sBYMsJwDaPluOenv7xcF8ybkuqysjAIDAwUcQbhTaGBgQKTJ3R8sMMFGAFHk6upq4exNeFOkCa3Z0dFB4eHhIkhqaiqNjo6KeWd/sJyLHICW4kNmR+58CbtBelJSUkSQkpISkUJnH7Cc21QctOjo6Ivu7m5xUHxpampKpCE/P5/UajU1NTXRxMSEmAMDLDDBRgCYmq/cNxkZGefo9dsIOxkcHKSqqipKTk6mvr4+MQ4GWGBKaMlk+LjwdbFTWFh4iXzfVkNDQ+KtUXCsBQMsMCX0X5Nrtdon7PCloKDgElt2V0VFBVVWVnqMQ1iDtWCAJSE9LYA/gWa8BX9wzjs7OwkfnT9CAMh5DD7wxRqsBUNCXW+8Q8Vj5BHF4pyelZeXU1tbG/X09AjhGWOYgw98r9Li8aG5zpA/NTqBb81XfK9M8sH5hNMJ4RljmLvqFhTUI+e3MSzClnFgcCpx9CE8YwxzN4D9/H4DBHRX5QA7dfoAAAAASUVORK5CYII=</bitmap>
-                    </item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a62b44cc-328b-4afa-b416-9f14c604966f</item>
-                    <item name="Name" type_name="gh_string" type_code="10">TimerLocker</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">TimerLocker</item>
-                    <item name="OutParameter" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ReferenceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="ScriptSource" type_name="gh_string" type_code="10">
-    'We need to disable the timer that is associated with this VB component.
-    'First, find the document that contains this VB component
-      Dim ghdoc As GH_Document = owner.OnPingDocument()
-      If (ghdoc Is Nothing) Then Return
-      'Then, iterate over all objects in the document to find all timers.
-      For Each docobj As IGH_DocumentObject In ghdoc.Objects
-        'Try to cast the object to a GH_Timer
-        Dim timer As Special.GH_Timer = TryCast(docobj, Special.GH_Timer)
-        If (timer Is Nothing) Then Continue For
-        'If the cast was successful, then see if this component is
-        'part of the timer target list.
-        If (timer.Targets.Contains(owner.InstanceGuid)) Then
-
-          'If it is,
-
-          If(DisableTimers) Then
-            'lock the timer.
-            print("Timer Locked")
-            timer.Locked = True
-          Else
-            print("Timer Unlocked")
-            Timer.Locked = False
-          End If
-
-        End If
-      Next
-    </item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="2">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>289</X>
-                          <Y>212</Y>
-                          <W>106</W>
-                          <H>94</H>
-                        </item>
-                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>381</X>
-                          <Y>259</Y>
-                        </item>
-                      </items>
-                    </chunk>
-                    <chunk name="ParameterData">
-                      <items count="3">
-                        <item name="InputCount" type_name="gh_int32" type_code="3">1</item>
-                        <item name="InputId" index="0" type_name="gh_guid" type_code="9">84fa917c-1ed8-4db3-8be1-7bdc4a6495a2</item>
-                        <item name="OutputCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="InputParam" index="0">
-                          <items count="11">
-                            <item name="AllowTreeAccess" type_name="gh_bool" type_code="1">true</item>
-                            <item name="Description" type_name="gh_string" type_code="10">Script Variable DisableTimers</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2776db1-71e0-4c43-b5c8-22514562a7ce</item>
-                            <item name="Name" type_name="gh_string" type_code="10">DisableTimers</item>
-                            <item name="NickName" type_name="gh_string" type_code="10">DisableTimers</item>
-                            <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                            <item name="ScriptParamAccess" type_name="gh_int32" type_code="3">0</item>
-                            <item name="ShowTypeHints" type_name="gh_bool" type_code="1">true</item>
-                            <item name="Source" index="0" type_name="gh_guid" type_code="9">5d4f11f5-c8d9-400f-b630-48b287491b87</item>
-                            <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="TypeHintID" type_name="gh_guid" type_code="9">3cda2745-22ac-4244-9b04-97a5255fa60f</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Attributes">
-                              <items count="2">
-                                <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                                  <X>291</X>
-                                  <Y>214</Y>
-                                  <W>75</W>
-                                  <H>90</H>
-                                </item>
-                                <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                                  <X>330</X>
-                                  <Y>259</Y>
-                                </item>
-                              </items>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="3">
-              <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">5a2b0735-ba98-4b7d-a7d3-c1dfc04475ad</item>
                 <item name="Name" type_name="gh_string" type_code="10">Timer</item>
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="10">
+                  <items count="11">
                     <item name="Description" type_name="gh_string" type_code="10">Provides a mechanism for updating solutions at specified intervals.</item>
                     <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7d1e8a0-e613-4ba2-8fd2-e11aa6a40dd2</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">true</item>
@@ -267,15 +158,16 @@
                     <item name="NickName" type_name="gh_string" type_code="10">Timer</item>
                     <item name="Target" index="0" type_name="gh_guid" type_code="9">42a91f5b-a687-48e4-bd5e-dc4feccb50f5</item>
                     <item name="Target" index="1" type_name="gh_guid" type_code="9">a62b44cc-328b-4afa-b416-9f14c604966f</item>
-                    <item name="TargetCount" type_name="gh_int32" type_code="3">2</item>
+                    <item name="Target" index="2" type_name="gh_guid" type_code="9">a0992f15-eecb-4622-9a4c-2e3abe9be274</item>
+                    <item name="TargetCount" type_name="gh_int32" type_code="3">3</item>
                     <item name="TimerInterval" type_name="gh_int32" type_code="3">10000</item>
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
                       <items count="1">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>220</X>
-                          <Y>466</Y>
+                          <X>241</X>
+                          <Y>454</Y>
                           <W>100</W>
                           <H>24</H>
                         </item>
@@ -285,7 +177,7 @@
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="4">
+            <chunk name="Object" index="3">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">c552a431-af5b-46a9-a8a4-0fcbc27ef596</item>
                 <item name="Name" type_name="gh_string" type_code="10">Group</item>
@@ -311,7 +203,7 @@
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="5">
+            <chunk name="Object" index="4">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">7f5c6c55-f846-4a08-9c9a-cfdc285cc6fe</item>
                 <item name="Name" type_name="gh_string" type_code="10">Scribble</item>
@@ -347,7 +239,7 @@
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>32.7529</X>
                           <Y>32.63988</Y>
@@ -358,14 +250,13 @@
                           <X>37.7529</X>
                           <Y>37.63988</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                   </chunks>
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="6">
+            <chunk name="Object" index="5">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">7f5c6c55-f846-4a08-9c9a-cfdc285cc6fe</item>
                 <item name="Name" type_name="gh_string" type_code="10">Scribble</item>
@@ -401,7 +292,7 @@
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>34.9404</X>
                           <Y>92.63989</Y>
@@ -412,7 +303,130 @@
                           <X>39.9404</X>
                           <Y>97.63989</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="6">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">a9a8ebd2-fff5-4c44-a8f5-739736d129ba</item>
+                <item name="Name" type_name="gh_string" type_code="10">Create Snippet</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="8">
+                    <item name="Description" type_name="gh_string" type_code="10">Use this script to create custom code "snippets" that you can save as user objects. Use the "Create Snippet with instructions" component for detailed steps on how to use it. </item>
+                    <item name="IconOverride" type_name="gh_drawing_bitmap" type_code="37">
+                      <bitmap length="849">iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAASIgAAEiIB6FAOQAAAAvNJREFUSEutletrzXEcx9/bsYsx2SYZRlpziXK/zF2YLFozYZPlFiE0wgy5bu7EA2rLJIk84Ynm8oTiiXjA2hOeiJRof4Bazet92u90xrZ+B596dc77d77fz+f3/Vy+Rz1YUhf8F7OjXpAK6XFY+/k/BYocl0rqpMdnpZ/npPbTUutJ6WmVtInfsyAN/ipIMo7q7LQ7WDMWssEnSciSjkpFgaNT0rf5Uk2yVD5MWrdNajgjtbFuNgwFpyshi+D0URBghnSQZythLkyESQulCj4nQy4kHCCVnH+3c/Lfiq4EO+cA0bwbOzaZEIGELC14+yNSC3oVjIN+4Hzbod/aBf69k/y9Jx21dHeLA9RKP9ArYBRkQLCBkkSJ1w6W0vHpl4jX/j1mabRnU3CKQmk3zzqdoEaa4nUdOvmLtItctn+QrqJz3kul1p+ke9bg2YkFScVjZRCAgn9dI1XhPb9cGn1CqvVcsM41cND0ZunhR9byfAt6zCvpkvVt6ZA1uG5+maj5S/Y+qT4I0hWsmQrDIecNKYW2IVIZuvCl1PyWNXOktejpMAhi3eaj9Ia81aSnWnoeTLK7ar/0pFg68AIdFnyNBJ82Zi5SH8gD9zutr2WwHJbCoiY2hoX1s8Ap7WQO4pO4SA6UDwUdnyPAuZ13XXr2ACd4OIzezC3QaE1uzqN9Z7kLmdc/A9iC9nP+4m9TB85iygooZOsdUkgPr+dZ8Q3p3V0C8CZb0T7tBPAL9oVuLej3AAfN2MkJbuGM3nyNLuNYi29S7HrpszW4wIPB6Q498ZEGnIaF9U6pCxw6QMo1NoaF9cxqNP+e6lDmhbnkaOYF8n+ZlHB+T/tGhrLlCk5p+j1o16QEgjkIHcBHzeQGXHIRZ8ckZkoV/DGUWjMrzr+v8wXgPyXmL1rg0ClykVO4aas9fNslOlVFG6Qd1nul+9bgC7I/+M6yc+8LbdFTgAs4DcaDrw3PSaAHgts7IceBeZM3+xJzfgeAOyVee1birmnpFxyr9ggJ4c0XAAAAAElFTkSuQmCC</bitmap>
+                    </item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0992f15-eecb-4622-9a4c-2e3abe9be274</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Create Snippet</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">TimerLocker</item>
+                    <item name="OutParameter" type_name="gh_bool" type_code="1">false</item>
+                    <item name="ReferenceCount" type_name="gh_int32" type_code="3">0</item>
+                    <item name="ScriptSource" type_name="gh_string" type_code="10">
+foreach(IGH_DocumentObject obj in GrasshopperDocument.Objects) { //for all objs in GH doc
+      
+      //Try to cast the object to a GH_Timer
+      if(obj is Grasshopper.Kernel.Special.GH_Timer) {
+        Grasshopper.Kernel.Special.GH_Timer timer = obj as Grasshopper.Kernel.Special.GH_Timer;
+        if (timer.Targets.Contains(this.Component.InstanceGuid)) {
+          
+          if(!EnableTimers) { timer.Locked = true; }
+          else { timer.Locked = false; }
+        }
+      }
+    }
+          </item>
+                  </items>
+                  <chunks count="2">
+                    <chunk name="Attributes">
+                      <items count="2">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>289</X>
+                          <Y>206</Y>
+                          <W>102</W>
+                          <H>94</H>
+                        </item>
+                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
+                          <X>377</X>
+                          <Y>253</Y>
+                        </item>
+                      </items>
+                    </chunk>
+                    <chunk name="ParameterData">
+                      <items count="3">
+                        <item name="InputCount" type_name="gh_int32" type_code="3">1</item>
+                        <item name="InputId" index="0" type_name="gh_guid" type_code="9">84fa917c-1ed8-4db3-8be1-7bdc4a6495a2</item>
+                        <item name="OutputCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="InputParam" index="0">
+                          <items count="11">
+                            <item name="AllowTreeAccess" type_name="gh_bool" type_code="1">true</item>
+                            <item name="Description" type_name="gh_string" type_code="10">Script Variable EnableTimers</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c2a7150-cae1-4c32-a856-12e09a4bead1</item>
+                            <item name="Name" type_name="gh_string" type_code="10">EnableTimers</item>
+                            <item name="NickName" type_name="gh_string" type_code="10">EnableTimers</item>
+                            <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+                            <item name="ScriptParamAccess" type_name="gh_int32" type_code="3">0</item>
+                            <item name="ShowTypeHints" type_name="gh_bool" type_code="1">true</item>
+                            <item name="Source" index="0" type_name="gh_guid" type_code="9">5d4f11f5-c8d9-400f-b630-48b287491b87</item>
+                            <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                            <item name="TypeHintID" type_name="gh_guid" type_code="9">d60527f5-b5af-4ef6-8970-5f96fe412559</item>
+                          </items>
+                          <chunks count="1">
+                            <chunk name="Attributes">
+                              <items count="2">
+                                <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                                  <X>291</X>
+                                  <Y>208</Y>
+                                  <W>71</W>
+                                  <H>90</H>
+                                </item>
+                                <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
+                                  <X>328</X>
+                                  <Y>253</Y>
+                                </item>
+                              </items>
+                            </chunk>
+                          </chunks>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="7">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">5a2b0735-ba98-4b7d-a7d3-c1dfc04475ad</item>
+                <item name="Name" type_name="gh_string" type_code="10">Timer</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="9">
+                    <item name="Description" type_name="gh_string" type_code="10">Provides a mechanism for updating solutions at specified intervals.</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f80b6ba7-35c3-44a5-8f7d-be012d58c3ff</item>
+                    <item name="Locked" type_name="gh_bool" type_code="1">true</item>
+                    <item name="Mutable" type_name="gh_bool" type_code="1">false</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Timer</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">Timer</item>
+                    <item name="Target" index="0" type_name="gh_guid" type_code="9">a0992f15-eecb-4622-9a4c-2e3abe9be274</item>
+                    <item name="TargetCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="TimerInterval" type_name="gh_int32" type_code="3">50</item>
+                  </items>
+                  <chunks count="1">
+                    <chunk name="Attributes">
+                      <items count="1">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>372</X>
+                          <Y>415</Y>
+                          <W>100</W>
+                          <H>24</H>
+                        </item>
                       </items>
                     </chunk>
                   </chunks>
@@ -426,7 +440,7 @@
     <chunk name="Thumbnail">
       <items count="1">
         <item name="Thumbnail" type_name="gh_drawing_bitmap" type_code="37">
-          <bitmap length="4037">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</bitmap>
+          <bitmap length="3508">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</bitmap>
         </item>
       </items>
     </chunk>
