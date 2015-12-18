@@ -14,6 +14,7 @@ If you'd like to add, please send a pull request.
 * **SwivelFigures**: Place scale figures and rotate them to align with camera, Sketchup-Style
 ![SwivelFigures.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/SwivelFigures/SwivelFigures.gif)
 * **JsonReader**: Read JSON data from web APIS (and display lat/long info)
+![JsonReader.gif](https://github.com/provolot/GrasshopperArsenal/raw/master/JsonReader/JsonReader.gif)
 * **GisReader**: Read GIS shapefiles as Rhino geometry (using [localcode/finches](https://github.com/localcode/finches))
 * **SnippetTransferer**: Using Andrew Heumann's [Create Snippets](http://www.grasshopper3d.com/profiles/blogs/create-snippets-with-grasshopper) code, send snippet as data
 ![SnippetTransferer.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/SnippetTransferer/SnippetTransferer.gif)
