@@ -9,6 +9,7 @@ If you'd like to add, please send a pull request.
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
 * **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
 * **TimerLocker**: Enable/Disable timers with Grasshopper Boolean values
+![TimerLocker.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/TimerLocker/TimerLocker.gif)
 * **GeometrySelector**: Select Geometry with the mouse and send that info to others
 * **SwivelFigures**: Place scale figures and rotate them to align with camera, Sketchup-Style
 ![SwivelFigures.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/SwivelFigures/SwivelFigures.gif)
