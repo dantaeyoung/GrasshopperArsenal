@@ -17,6 +17,8 @@ If you'd like to add, please send a pull request.
 * **GisReader**: Read GIS shapefiles as Rhino geometry (using [localcode/finches](https://github.com/localcode/finches))
 * **SnippetTransferer**: Using Andrew Heumann's [Create Snippets](http://www.grasshopper3d.com/profiles/blogs/create-snippets-with-grasshopper) code, send snippet as data
 ![SnippetTransferer.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/SnippetTransferer/SnippetTransferer.gif)
+* **FunctionalReduce**: Reduce/Foldl in Grasshopper
+![FunctionalReduce.PNG](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/FunctionalReduce/FunctionalReduce.PNG)
 
 ## Experimental:
 
