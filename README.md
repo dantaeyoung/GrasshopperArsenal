@@ -20,7 +20,6 @@ If you'd like to add, please send a pull request.
 ## Experimental:
 
 * **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
-![http://i.imgur.com/iR4F3YM.gif](http://i.imgur.com/iR4F3YM.gif)
 
 #### Setup:
 
