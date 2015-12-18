@@ -24,6 +24,7 @@ If you'd like to add, please send a pull request.
 ## Experimental:
 
 * **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
+![CameraTracer.gif](https://github.com/provolot/GrasshopperArsenal/raw/master/CameraTracer/CameraTracer.gif)
 
 #### Setup:
 
