@@ -10,5 +10,7 @@ This was created to represent data processed with T-SNE, ([using Owl, by Mateusz
 ![hungarian1.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian1.jpg)
 2. Organized with 2D T-SNE
 ![hungarian2.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian2.jpg)
-3. Mapped to a grid with the Hungarian algorithm
+3. Assigned to a grid with the Hungarian algorithm
 ![hungarian3.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian3.jpg)
+4. Placed
+![hungarian4.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian4.jpg)
