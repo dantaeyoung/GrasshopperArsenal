@@ -1,11 +1,12 @@
 # GrasshopperArsenal
 
-Grasshopper GHXs to share / play with.
+Rhino / Grasshopper GHX components to share / play with.
 
 If you'd like to add, please send a pull request! 
 If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
-## ROBUST:
+## List of components
+#### Robust:
 
 * **HungarianAlgorithm**: Assignment problem between sets of points (for turning Owl T-SNE data to a grid)
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
@@ -23,16 +24,16 @@ If you'd like to chat, I'm at @dantaeyoung on Twitter!
 * **FunctionalReduce**: Reduce/Foldl in Grasshopper
 ![FunctionalReduce.PNG](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/FunctionalReduce/FunctionalReduce.PNG)
 
-## Experimental:
+#### Experimental:
 
 * **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
 ![CameraTracer.gif](https://github.com/provolot/GrasshopperArsenal/raw/master/CameraTracer/CameraTracer.gif)
 
-#### Setup:
+## Setup:
 
 Before running the scripts,
-* Install IronPython: http://ironpython.net/
-* Run 'EditPythonScript' in Rhino; under Tools > Options, and in the 'Script Engine' tab, make sure that 'Frames Enabled' is checked.
+- Install IronPython: http://ironpython.net/
+- Run 'EditPythonScript' in Rhino; under Tools > Options, and in the 'Script Engine' tab, make sure that 'Frames Enabled' is checked.
 
 #### Troubleshooting:
 
