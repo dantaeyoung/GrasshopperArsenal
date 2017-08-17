@@ -6,6 +6,7 @@ If you'd like to add, please send a pull request.
 
 ## ROBUST:
 
+* **HungarianAlgorithm**: Assignment problem between sets of points (for turning Owl T-SNE data to a grid)
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
 * **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
 * **TimerLocker**: Enable/Disable timers with Grasshopper Boolean values
