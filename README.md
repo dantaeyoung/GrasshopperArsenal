@@ -5,10 +5,14 @@ Rhino / Grasshopper GHX components to share / play with.
 If you'd like to add, please send a pull request! 
 If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
+
+
+
 ## List of components
-#### Robust:
+### Robust:
 
 * **HungarianAlgorithm**: Assignment problem between sets of points (for turning Owl T-SNE data to a grid)
+![hungarian3.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian3.jpg)
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
 * **SlackNotifier**: Posting to Slack with Grasshopper & Slack Web API
 * **TimerLocker**: Enable/Disable timers with Grasshopper Boolean values
@@ -24,10 +28,12 @@ If you'd like to chat, I'm at @dantaeyoung on Twitter!
 * **FunctionalReduce**: Reduce/Foldl in Grasshopper
 ![FunctionalReduce.PNG](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/FunctionalReduce/FunctionalReduce.PNG)
 
-#### Experimental:
+### Experimental / playful:
 
 * **CameraTracer**: Turns scribbles, captured via the webcam, into polylines
 ![CameraTracer.gif](https://github.com/provolot/GrasshopperArsenal/raw/master/CameraTracer/CameraTracer.gif)
+
+
 
 ## Setup:
 
@@ -50,3 +56,10 @@ if not libraryPath in sys.path:
     sys.path.append(libraryPath)
 ################################
 ```
+
+
+## Related:
+
+[**Grasshopper Challenges**](https://github.com/dantaeyoung/GrasshopperChallenges): A set of challenges designed to teach Grasshopper by creating a set of active learning / problem-solving challenges -- learning-by-doing-and-solving, rather than learning-by-watching-videos. 
+
+
