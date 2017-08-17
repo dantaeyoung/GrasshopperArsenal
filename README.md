@@ -2,7 +2,8 @@
 
 Grasshopper GHXs to share / play with.
 
-If you'd like to add, please send a pull request.
+If you'd like to add, please send a pull request! 
+If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
 ## ROBUST:
 
