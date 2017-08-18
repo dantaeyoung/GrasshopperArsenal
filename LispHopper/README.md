@@ -1,4 +1,5 @@
-## LispHopper
+## LispHopper 
+
 Lisp (Hy), Python, and Grasshopper. What's not to like?
 
 ![LispHopper.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/LispHopper/LispHopper.gif)
@@ -32,5 +33,5 @@ or even `(import [ghpythonlib.components :as ghcomp])`. Whoa.
 ### Thoughts:
 
 - The dataflow structure of GH feels nice for a functional language. Threading macros such as `->`, `->>`, or `at-pip` make it even better.
-- Not sure if this will be helpful, or more productive, but it sure is fun!
 - Related is [Arcadia](https://github.com/arcadia-unity/Arcadia), for Unity.
+- Not sure if this will be helpful, or more productive, but it sure is fun!
