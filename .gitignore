@@ -1,5 +1,6 @@
 .3dmbak
 *.3dmbak
 *.rhl
-*.3dmbak
 .DS_Store
+__pycache__
+*.swp
