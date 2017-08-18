@@ -1,3 +1,3 @@
 ## LispHopper
 
-![LispHopper.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/LispHopper/hungarian4.gif)
+![LispHopper.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/LispHopper/LispHopper.gif)
