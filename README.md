@@ -9,8 +9,9 @@ If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
 
 ## List of components
-### Robust:
 
+* **LispHopper**: Lisp (Hy), Python, and Grasshopper. What's not to like?
+![LispHopper.gif](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/LispHopper/LispHopper.gif)
 * **HungarianAlgorithm**: Assignment problem between sets of points (for turning Owl T-SNE data to a grid)
 ![hungarian3.jpg](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/HungarianAlgorithm/hungarian3.jpg)
 * **MetaDataWriter**: Writing and reading metadata into Rhino geometry
