@@ -41,5 +41,6 @@ I'm using Python because
 
 5. With this, you should be done with installation. Any Python libraries needed in the future can be installed with `pip install XXXX`, where `XXXX` is the name of the library.
 
+### Getting started
 
-
+I recommend trying out `PCA_example_3d.gh` first.
