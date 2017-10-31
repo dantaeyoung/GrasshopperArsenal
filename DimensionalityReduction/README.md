@@ -24,6 +24,7 @@ I'm using Python because
 - For PCA, we need to install the `numpy` and `matplotlib` libraries. Type:
 - Type `pip install numpy matplotlib`
 - You should the installation complete successfully.
+- ![pip installation](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_4_pip_install.png)
 
 3. [GH_CPython](http://www.food4rhino.com/app/ghcpython)
 - This Grasshopper component lets you choose and run the Python interpreter you choose -- so you can run 'real' Python inside GH. 
@@ -36,7 +37,7 @@ I'm using Python because
 
 4. [GH_Python](http://www.food4rhino.com/app/ghpython)
 - This is the standard Python component in Grasshopper currently necessary to 'broker' data trees between GH_CPython and Grasshopper. (Potentially not needed in future versions of GH_CPython.)
-- Install this component1
+- Install this component!
 
 5. With this, you should be done with installation. Any Python libraries needed in the future can be installed with `pip install XXXX`, where `XXXX` is the name of the library.
 
