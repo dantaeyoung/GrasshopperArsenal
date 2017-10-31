@@ -1,7 +1,7 @@
 ## DimensionalityReduction
 
-(These tools are not hand-coded tools per se, but rather examples of GH_C_Python and numpy so that PCA can be done in Grasshopper. 
-I take zero credit for the libraries, just the wiring that makes this analysis possible.)
+(These tools are not my coded tools per se, but rather examples of GH_C_Python and numpy so that PCA can be done in Grasshopper. 
+I take zero credit for the libraries, just the 'wiring'/setup process that makes this possible.)
 
 While libraries such as [Accord](http://accord-framework.net/intro.html) exist for C#, 
 I'm using Python because 
