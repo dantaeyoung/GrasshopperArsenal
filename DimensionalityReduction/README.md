@@ -14,28 +14,28 @@ I'm using Python because
 - [GH_Python](http://www.food4rhino.com/app/ghpython) - This is the standard Python component in Grasshopper currently necessary to 'broker' data trees between GH_CPython and Grasshopper. Potentially not needed in future versions of GH_CPython.
 
 ### How-to / install
-1. Install [Python 3](https://www.python.org/downloads/).
-- ![python_install](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_1_python.png)
+#### 1. Install [Python 3](https://www.python.org/downloads/).
+![python_install](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_1_python.png)
 - You can do this even if you do not have admin access; make sure you click the 'just me' button:
-- ![python_local_install](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_1.5_python_local.png)
+![python_local_install](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_1.5_python_local.png)
 
-2. Install Python libraries
+####  2. Install Python libraries
 - Open Windows Powershell or Command Prompt. (You can do this by hitting the start button in Windows 8 and up, typing in 'powershell' and pressing enter).
 - For PCA, we need to install the `numpy` and `matplotlib` libraries. Type:
 - Type `pip install numpy matplotlib`
 - You should the installation complete successfully.
-- ![pip installation](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_4_pip_install.png)
+![pip installation](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_4_pip_install.png)
 
-3. [GH_CPython](http://www.food4rhino.com/app/ghcpython)
+#### 3. [GH_CPython](http://www.food4rhino.com/app/ghcpython)
 - This Grasshopper component lets you choose and run the Python interpreter you choose -- so you can run 'real' Python inside GH. 
 - Install the component.
 - Add the component to the Grasshopper canvas and double-click on the component to bring up the Python code window.
 - Click on the 'Python' menu item > 'Choose Interpreter' button.
-- ![choose interpreter](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_2_choose_interpreter.png)
+![choose interpreter](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_2_choose_interpreter.png)
 - Locate the Python.exe executable from the directory in the previous step above.
-- ![locatepython](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_3_locatePython.png)
+![locatepython](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_3_locatePython.png)
 
-4. [GH_Python](http://www.food4rhino.com/app/ghpython)
+#### 4. [GH_Python](http://www.food4rhino.com/app/ghpython)
 - This is the standard Python component in Grasshopper currently necessary to 'broker' data trees between GH_CPython and Grasshopper. (Potentially not needed in future versions of GH_CPython.)
 - Install this component!
 
@@ -44,3 +44,4 @@ I'm using Python because
 ### Getting started
 
 I recommend trying out `PCA_example_3d.gh` first.
+![pca_example_3d](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/example_PCA_example_3d.png)
