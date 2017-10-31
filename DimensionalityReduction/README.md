@@ -1,12 +1,29 @@
 ## DimensionalityReduction
 
-(These tools are not my coded tools per se, but rather examples of GH_C_Python and numpy so that PCA can be done in Grasshopper. 
+(These tools are not my coded tools per se, but rather examples of GH_C_Python and numpy so that PCA (Principal Component Analysis) and other techniques can be done in Grasshopper. 
 I take zero credit for the libraries, just the 'wiring'/setup process that makes this possible.)
 
 While libraries such as [Accord](http://accord-framework.net/intro.html) exist for C#, 
 I'm using Python because 
 1) There's a larger ML, statistics, scientific computing community for Python than in C#
 2) I like Python better. :)
+
+### Concept / reasons:
+More resources here: https://are.na/dan-taeyoung/machine-muses-learning-resources
+
+An interactive introduction to PCA: http://setosa.io/ev/principal-component-analysis/
+
+
+### Getting started
+
+Installation instructions are below.
+
+As for example, I recommend trying out `PCA_example_3d.gh` first. 
+
+It uses some of the car data from [this PCA introduction](https://rstudio-pubs-static.s3.amazonaws.com/182884_e3952c98230b4f789d1224eee70df3d4.html) or [from here](https://feliperego.github.io/blog/2016/05/31/Intro-To-Principal-Component-Analysis).
+
+![pca_example_3d](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/example_PCA_example_3d.png)
+
 
 ### Requirements:
 - [Python 3](https://www.python.org/downloads/) - This runs a 'real' implementation of Python, rather than IronPython, which is Python for the primarily Windows-based .NET framework.
@@ -40,8 +57,3 @@ I'm using Python because
 - Install this component!
 
 5. With this, you should be done with installation. Any Python libraries needed in the future can be installed with `pip install XXXX`, where `XXXX` is the name of the library.
-
-### Getting started
-
-I recommend trying out `PCA_example_3d.gh` first.
-![pca_example_3d](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/example_PCA_example_3d.png)
