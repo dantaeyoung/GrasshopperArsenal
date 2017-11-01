@@ -17,7 +17,7 @@ An interactive introduction to PCA: http://setosa.io/ev/principal-component-anal
 
 Installation instructions are below.
 
-As for example, I recommend trying out `PCA_example_3d.gh` first. 
+As for an example, I recommend trying out `PCA_example_3d.gh` first. 
 
 It uses some of the car data from [this PCA introduction](https://rstudio-pubs-static.s3.amazonaws.com/182884_e3952c98230b4f789d1224eee70df3d4.html) or [from here](https://feliperego.github.io/blog/2016/05/31/Intro-To-Principal-Component-Analysis).
 
