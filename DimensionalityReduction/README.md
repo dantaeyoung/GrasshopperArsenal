@@ -61,9 +61,9 @@ It uses some of the car data from [this PCA introduction](https://rstudio-pubs-s
 
 #### DLL unblock:
 If you have problems opening GH_CPython, you may have to 'unblock' the DLL:
-Open the libraries folder from Grasshopper:
-![ghlibraries](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/grasshopper_libraries.png)
-Right-click on the `FastColoredTextBox.dll` file,
-![rightclick](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_right_click.png)
-And clicking the 'unblock' button if it exists.
-![unblock](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_unblock.jpg)
+- Open the libraries folder from Grasshopper:
+- ![ghlibraries](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/grasshopper_libraries.png)
+- Right-click on the `FastColoredTextBox.dll` file,
+- ![rightclick](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_right_click.png)
+- And clicking the 'unblock' button if it exists.
+- ![unblock](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_unblock.jpg)
