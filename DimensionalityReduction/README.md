@@ -49,7 +49,7 @@ It uses some of the car data from [this PCA introduction](https://rstudio-pubs-s
 - Add the component to the Grasshopper canvas and double-click on the component to bring up the Python code window.
 - Click on the 'Python' menu item > 'Choose Interpreter' button.
 ![choose interpreter](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_2_choose_interpreter.png)
-- Locate the Python.exe executable from the directory in the previous step above.
+- Locate the Python.exe executable from the directory in the previous step above. (The directory I asked you to remember.)
 ![locatepython](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/installation_3_locatePython.png)
 
 #### 4. [GH_Python](http://www.food4rhino.com/app/ghpython)
