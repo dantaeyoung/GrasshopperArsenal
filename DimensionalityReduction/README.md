@@ -5,12 +5,11 @@ I take zero credit for the libraries, just the 'wiring'/setup process that makes
 
 While libraries such as [Accord](http://accord-framework.net/intro.html) exist for C#, 
 I'm using Python because 
-1) There's a larger ML, statistics, scientific computing community for Python than in C#
+1) There's a larger ML, statistics, scientific computing community for Python than in C#, which equals to more examples, documentation, and help
 2) I like Python better. :)
 
 ### Concept / reasons:
 More resources here: https://are.na/dan-taeyoung/machine-muses-learning-resources
-
 An interactive introduction to PCA: http://setosa.io/ev/principal-component-analysis/
 
 
@@ -57,3 +56,14 @@ It uses some of the car data from [this PCA introduction](https://rstudio-pubs-s
 - Install this component!
 
 5. With this, you should be done with installation. Any Python libraries needed in the future can be installed with `pip install XXXX`, where `XXXX` is the name of the library.
+
+### Troubleshooting
+
+#### DLL unblock:
+If you have problems opening GH_CPython, you may have to 'unblock' the DLL:
+Open the libraries folder from Grasshopper:
+![ghlibraries](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/grasshopper_libraries.png)
+Right-click on the `FastColoredTextBox.dll` file,
+![rightclick](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_right_click.png)
+And clicking the 'unblock' button if it exists.
+![unblock](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/DimensionalityReduction/images/dll_unblock.jpg)
