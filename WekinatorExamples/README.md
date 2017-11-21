@@ -10,3 +10,4 @@ https://youtu.be/ZPARO6cZty8
 Other resources to use with Wekinator:
 - http://facetracker.net/
 - http://www.wekinator.org/examples/
+- [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases)
