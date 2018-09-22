@@ -54,4 +54,4 @@ By connecting a 'getFlounderCamera' component with a 'setFlounderCamera' compone
 
 What does it feel like to use Grasshopper without the Grasshopper window visible? How is this an environment? 
 
-What other kind of things can you do to change not "what the tool does", but how you interact with the tool, and thus how you can think with the tool?
+What other kind of things can you do to change how you interact with the tool, and thus how you can think with the tool?
