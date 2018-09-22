@@ -5,7 +5,9 @@
 ![final_example.gif](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/WallMaker/gifs/final_example.gif)
 
 This is an example of a tool/interface in Grasshopper. 
-The actual 'computation' that this tool is doing is straightforward - it extrudes lines. However, other aspects of the tool, created by `Geometry Pipeline`, `Custom Preview`, and `Flounder Camera Plugin`, create an interface where the tool is used with Grasshopper fully minimized.
+The actual 'computation' that this tool is doing is straightforward - the tool extrudes lines into walls.
+
+Other aspects of the tool, created by `Geometry Pipeline`, `Custom Preview`, and `Flounder Camera Plugin`, create an environment or interface where the tool is used with Grasshopper fully minimized.
 
 Part of the point of this tool is about thinking how the interface changes how we interact with the tool and how we design. 
 
