@@ -9,6 +9,11 @@ The actual 'computation' that this tool is doing is straightforward - it extrude
 
 Part of the point of this tool is about thinking how the interface changes how we interact with the tool and how we design. 
 
+You can download the files here:
+- ![WallMaker.gh](WallMaker.gh)
+- ![WallMaker_Rhino.3dm](WallMaker_Rhino.3dm) (Rhino 6)
+
+
 ### Geometry Pipeline
 
 ![geometry_pipeline.gif](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/WallMaker/gifs/geometry_pipeline.gif)
@@ -45,4 +50,6 @@ By connecting a 'getFlounderCamera' component with a 'setFlounderCamera' compone
 
 ![final_example.gif](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/WallMaker/gifs/final_example.gif)
 
+What does it feel like to use Grasshopper without the Grasshopper window visible? How is this an environment? 
 
+What other kind of things can you do to change not "what the tool does", but how you interact with the tool, and thus how you can think with the tool?
