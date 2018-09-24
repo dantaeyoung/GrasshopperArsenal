@@ -14,17 +14,29 @@ The mouse input component (`mouse`) is from the plugin `InteracTool`, downloadab
 
 ![datadam_mouse.gif](gifs/datadam_mouse.gif)
 
+`Data Dam` is helpful in a lot of ways. For example, you can use it to detect whether a value has changed, by comparing a value and its output. Since `Data Dam` 'lags' behind a bit behind the changed value, the comparison will answer the question: "is data changing?"
+
+![isdatachanging.gif](gifs/isdatachanging.gif)
+
+`Stream Filter` can operate like a switch -- given an input 'gate' command, it can distribute data to one of many different outputs. Think of it like a railroad track switch, able to send lots of data to many different directions.
+
+If you zoom into `Stream Filter`, you can edit the number of outputs so that the component can distribute data to four different outputs, for example.
+
+![streamfilter.gif](gifs/streamfilter.gif)
+
+Using the `Stream Filter` component with `Data Dam`, you can pass data through only when it's changed. This is helpful when you want to record data (using `Record Data`, or `Data Log` from the `Firefly` plugin), or you want to trigger something only when new data is received.
+
+![dataonlywhenchanging.gif](gifs/dataonlywhenchanging.gif)
+
 
 ![custom_preview_1.gif](gifs/custom_preview_1.gif)
 ![custom_preview_2_viewport_filter.gif](gifs/custom_preview_2_viewport_filter.gif)
-![dataonlywhenchanging.gif](gifs/dataonlywhenchanging.gif)
 ![display_geometry_names.gif](gifs/display_geometry_names.gif)
 ![final_example.gif](gifs/final_example.gif)
 ![flounder_camera_1_get.gif](gifs/flounder_camera_1_get.gif)
 ![flounder_camera_2_sync.gif](gifs/flounder_camera_2_sync.gif)
 ![geometry_pipeline.gif](gifs/geometry_pipeline.gif)
 ![get_attributes.gif](gifs/get_attributes.gif)
-![isdatachanging.gif](gifs/isdatachanging.gif)
 ![keyboard_input_toggle_select.gif](gifs/keyboard_input_toggle_select.gif)
 ![keyboardinput.gif](gifs/keyboardinput.gif)
 ![mouse_click_update.gif](gifs/mouse_click_update.gif)
@@ -32,6 +44,5 @@ The mouse input component (`mouse`) is from the plugin `InteracTool`, downloadab
 ![selobj_intro.gif](gifs/selobj_intro.gif)
 ![selobj_with_mouseclick.gif](gifs/selobj_with_mouseclick.gif)
 ![set_name_attributes.gif](gifs/set_name_attributes.gif)
-![streamfilter.gif](gifs/streamfilter.gif)
 ![timer_constant_refresh_example.gif](gifs/timer_constant_refresh_example.gif)
 ![wallmaker_with_keyboard.gif](gifs/wallmaker_with_keyboard.gif)
