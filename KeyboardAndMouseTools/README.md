@@ -1,5 +1,7 @@
 # Keyboard and Mouse Tools
 
+This document is an example-based introduction to Keyboard and Mouse tools -- as well as a few tricks/hacks for using these tools!
+
 ## Data Dam and streams
 
 The component called `Data Dam` can be incredibly helpful when working with rapidly changing data.
@@ -34,18 +36,43 @@ Using the `Stream Filter` component with `Data Dam`, you can pass data through o
 
 However, by default, the component will only run once, even if you select different things. This is because nothing 'upstream' of the component has expired. 
 
-(A brief note on how Grasshopper works: each component in Grasshopper only recomputes/re-runs when one of its inputs has changed. When the component runs, it will update its outputs. Anything connected to it's outputs will then recompute also, updating outputs again, and so on and so forth. This means that, if you update a slider that plugs into cha Grasshopper parlance, this means that none of the inputs that feed into the component have changed. Also, none of the inputs of the inputs (or the inputs of the inputs of the inputs..) have changed either. When the data input changes, Grasshopper sends as signal to 'expire the solution'.
-Since the component looks at Rhino, if its Grasshopper inputs don't change, then the component won't re-trigger and update.
+A quick note on how solution expiration in Grasshopper works: each component in Grasshopper only recomputes/re-runs when one of its inputs has changed. When the component runs, it will update its outputs. Anything connected to it's outputs will then recompute also, updating outputs again, and so on and so forth. 
 
-To solve this, you can attach a `Timer` object it so that it checks for currently selected objects at a given interval. The `Timer` is a special component that tells the components it's attached to, to 'refresh' their answer. Or, in Grasshopper parlance, this would be 'telling the component to 'expire its solution'. Everything 'downstream' of the component -- that is, everything that's connected to the component's output, 
+![change_propagate.gif](gifs/change_propagate.gif)
+
+When a component's input changes, Grasshopper declares that the component's solution has 'expired' -- that is, the solution that the component was holding until now is now longer valid, since now the component input has changed. For example, if the 'x^2' component had an input of `7`, then the component's output would be `49`. But if the input changes to something else, say, `11`, then the component declares that its solution is expired, recalculates its solution (`121`), and pushes it to the output. 
+
+For the `SelObj` component -- since its inputs are not affected by what happens in Rhino, a solution expiration will not be triggered even if new things are selected in Rhino, and the component's outputs will not change. 
+
+To solve this, you can attach a `Timer` object to the `SelObj` component. The `Timer` is a special component that tells the components it's attached to continually expire its solution every X seconds. Everything 'downstream' of the component -- that is, everything that's connected to the component's output, will also thus refresh every X seconds. Using the `Timer`, you can get objects that are selected!
 
 ![selobj_intro.gif](gifs/selobj_intro.gif)
 
-However, one of the downsides of j
+However, one of the downsides of the `Timer` is its upside: Everything refreshes often, which is great, and everything refreshes often, which can make your script run slow. Imagine if your script takes 500ms to run, and the Timer tries to run every 250ms. This can lead to some major slowdowns.
 
 ![timer_constant_refresh_example.gif](gifs/timer_constant_refresh_example.gif)
+
+So - one trick/hack/solution is to use other inputs other than the `Timer` to trigger a solution expiration, and thus a refresh. 
+
+In the example below, the output of the mouse click is plugged into a `Boolean` component, and then plugged into a `Data Dam` so we can see what's going on. The `Boolean` component stores either True or False, but when it receives data other than the two, 0 is interpreted as False, and anything other than 0 will be considered to be True. 
+
+So, since the output of the `mouse` component's point will pretty much never by exactly zero, this is quick hack to generate a 'True' value that will update each time you click. We've created an output that will always be True, but will just 'refresh' its' value whenever you click.
+
 ![mouse_click_update.gif](gifs/mouse_click_update.gif)
+
+This means that we can harness this refreshing 'True' value and plug it into the `SelObj` component. Since selecting objects with the mouse involves a mouse click, every time you select an object in Rhino with the mouse, the mouse click will also trigger a scan by the `SelObj` component.
+
+We do need to add a `Data Dam` so that the `SelObj` component scanned for selected objects a tiny bit after you've already selected an object, so the order of operations goes like this:
+
+- You start selecting an object in Rhino, which triggers a click
+- The click enters the data dam
+- You finish selecting an object in Rhino
+- The click exits the data dam, and triggers `SelObj`
+- `SelObj` scans for selected objects, and finds the object that you newly selected.
+
 ![selobj_with_mouseclick.gif](gifs/selobj_with_mouseclick.gif)
+
+
 
 
 ![display_geometry_names.gif](gifs/display_geometry_names.gif)
