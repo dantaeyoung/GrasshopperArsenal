@@ -46,6 +46,8 @@ For the `SelObj` component -- since its inputs are not affected by what happens 
 
 To solve this, you can attach a `Timer` object to the `SelObj` component. The `Timer` is a special component that tells the components it's attached to continually expire its solution every X seconds. Everything 'downstream' of the component -- that is, everything that's connected to the component's output, will also thus refresh every X seconds. Using the `Timer`, you can get objects that are selected!
 
+If you extrude them and make them look nice, it starts to feel kind of like magic.
+
 ![selobj_intro.gif](gifs/selobj_intro.gif)
 
 However, one of the downsides of the `Timer` is its upside: Everything refreshes often, which is great, and everything refreshes often, which can make your script run slow. Imagine if your script takes 500ms to run, and the Timer tries to run every 250ms. This can lead to some major slowdowns.
@@ -72,14 +74,56 @@ We do need to add a `Data Dam` so that the `SelObj` component scanned for select
 
 ![selobj_with_mouseclick.gif](gifs/selobj_with_mouseclick.gif)
 
+## Working with Geometry Names to store information
 
+One helpful trick is to use geometry names to store information about a piece of geometry. All geometry in Rhino have names, and you can see them in the Properties tab. Names aren't exclusive --- multiple objects/geometry can have the same name, and you can select objects by name in Rhino using `SelName`, but names don't seem to be used that often. (Or, at least, I don't use them that often in Rhino).
 
+However, they can come in super handy in Grasshopper.
+
+Below, we use the `Human` plugin's `Object Attributes` component, as well as the `Text Tag` component to display the name of each curve at its midpoint. `Object Attributes` will get all the information about a referenced Rhino object, including Layer name, display color, name, et cetera.
 
 ![display_geometry_names.gif](gifs/display_geometry_names.gif)
+
+If we combine this with our `SelObj` process above, we can have a script that displays the names of selected geometry. Pretty nifty.
+
 ![get_attributes.gif](gifs/get_attributes.gif)
-![keyboard_input_toggle_select.gif](gifs/keyboard_input_toggle_select.gif)
-![keyboardinput.gif](gifs/keyboardinput.gif)
-![saving_keystrokes_to_names.gif](gifs/saving_keystrokes_to_names.gif)
+
+We can also set attributes -- using the `CreateAtts` and `ModAtts` (Create Attributes / Modify Attributes) components. `CreateAtts` will help you compose a series of attributes, and `ModAtts` will set those attributes to the geometry you put into it.
+
+This means that you can both get and set the attributes of all Rhino objects.
 
 ![set_name_attributes.gif](gifs/set_name_attributes.gif)
+
+
+## Keyboard Input
+
+With the `InteracTool` plugin, we can also receive keyboard input. This is super nifty! 
+
+(It can also be a little complicated, since any keyboard input will also be interpreted in Rhino as a potential keyboard command. If you do use the keyboard as input into Grasshopper, it means that you might have to alternate between typing keys and pressing `esc` to discard what you have typed so far in Rhino.)
+
+The `Keyboard` component can take an input of 'keys to scan for', and will return a boolean list of true/false values based on "which key was triggered", or "which key was toggled", so you can treat each key as a trigger event (like pressing a button) or as a toggle switch (like turning something off/on).
+
+![keyboardinput.gif](gifs/keyboardinput.gif)
+
+Coupled with a `Dispatch` component, you can see how the results can be displayed/processed.
+
+![keyboard_input_toggle_select.gif](gifs/keyboard_input_toggle_select.gif)
+
+Let's get a little fancy. 
+
+We can retrieve data from the keyboard. Using a `List Item` component and a `Null` (Null Items) component, we can check if the data we've received is not null. (If it's null, it means that we've pressed escape, or some other key.) Using the `Stream Filter` component (which, as I said above, can operate like a train track switch), we can pass on the attributes only if we have a non-null keyboard input to pass on.
+
+What this does is that it prevents us from accidentally passing on attributes with a blank name, and erasing the names of objects whenever we select them. This is a little hard to explain, so feel free to play around with deleting the `Null`/`Stream Filter` stuff and plugging it in directly to the `ModAttr` component.
+
+Using this script, you can highlight geometry with a mouse, hit a key from `a` to `f`, and can set the geometry to have that name. 
+
+![saving_keystrokes_to_names.gif](gifs/saving_keystrokes_to_names.gif)
+
+
+## Wallmaker with Keyboard example
+
+Here's a final example, tying together, the `Data Dam`, `Mouse` input, `Keyboard` input, and attributes. You can select curve geometry, hit a key, and a wall will be created of that specific type. You can hit a different key, and a different wall will be created. You can edit the curves, delete them, or create new ones.
+
+Hopefully you can begin to see how this starts to approximate an interface -- the Grasshopper script begins to take on *affordances*, how you might start prototyping and revising things differently through this tool.
+
 ![wallmaker_with_keyboard.gif](gifs/wallmaker_with_keyboard.gif)
