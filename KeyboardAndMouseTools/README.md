@@ -32,9 +32,9 @@ Using the `Stream Filter` component with `Data Dam`, you can pass data through o
 
 `Objects by Selection` (or `SelObj` to be short)  is a component that's part of the [`Human` plugin suite ](https://www.food4rhino.com/app/human). It will reference any geometry that is currently being selected in Rhino.
 
-However, by default, the component will only run once, even if you select different things. 
+However, by default, the component will only run once, even if you select different things. This is because nothing 'upstream' of the component has expired. 
 
-This is because nothing 'upstream' of the component has expired. In Grasshopper parlance, this means that none of the inputs that feed into the component have changed. Also, none of the inputs of the inputs (or the inputs of the inputs of the inputs..) have changed either. When the data input changes, Grasshopper sends as signal to 'expire the solution'.
+(A brief note on how Grasshopper works: each component in Grasshopper only recomputes/re-runs when one of its inputs has changed. When the component runs, it will update its outputs. Anything connected to it's outputs will then recompute also, updating outputs again, and so on and so forth. This means that, if you update a slider that plugs into cha Grasshopper parlance, this means that none of the inputs that feed into the component have changed. Also, none of the inputs of the inputs (or the inputs of the inputs of the inputs..) have changed either. When the data input changes, Grasshopper sends as signal to 'expire the solution'.
 Since the component looks at Rhino, if its Grasshopper inputs don't change, then the component won't re-trigger and update.
 
 To solve this, you can attach a `Timer` object it so that it checks for currently selected objects at a given interval. The `Timer` is a special component that tells the components it's attached to, to 'refresh' their answer. Or, in Grasshopper parlance, this would be 'telling the component to 'expire its solution'. Everything 'downstream' of the component -- that is, everything that's connected to the component's output, 
