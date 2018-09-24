@@ -10,7 +10,7 @@ The component called `Data Dam` can be incredibly helpful when working with rapi
 
 This is incredibly helpful when you are working with data coming from a constantly-changing input source -- such as keyboards, mice, cameras, audio streams, Kinects, Leap Motion, etc. In the example below, you can see what happens when you use `Data Dam` to buffer mouse input. 
 
-The mouse input component (`mouse`) is from the plugin `InteracTool`, downloadable at ![Food4Rhino](https://www.food4rhino.com/app/interactool).
+The mouse input component (`mouse`) is from the plugin `InteracTool`, downloadable at ![Food4Rhino](https://www.food4rhino.com/app/interactool). The component outputs the location of the mouse pointer on the xy plan, an infinitely long line that passes through the camera and the mouse pointer, among other nifty outputs.
 
 ![datadam_mouse.gif](gifs/datadam_mouse.gif)
 
@@ -28,21 +28,24 @@ Using the `Stream Filter` component with `Data Dam`, you can pass data through o
 
 ![dataonlywhenchanging.gif](gifs/dataonlywhenchanging.gif)
 
+## Selecting objects with the mouse
 
-![custom_preview_1.gif](gifs/custom_preview_1.gif)
-![custom_preview_2_viewport_filter.gif](gifs/custom_preview_2_viewport_filter.gif)
+`Objects by Selection` (or `SelObj` to be short)  is a component that's part of the [`Human` plugin suite ](https://www.food4rhino.com/app/human). It will reference any geometry that is currently being selected in Rhino.
+
+You need to attach a `Timer` object it so that it checks for currently selected objects at a given interval. The `Timer` is a special component that tells the components it's attached to, to 'refresh' their answer. Or, in Grasshopper parlance, this would be 'telling the component to 'expire its solution'. Everything 'downstream' of the component -- that is, everything that's connected to the component's output, 
+
+
+![selobj_intro.gif](gifs/selobj_intro.gif)
+![timer_constant_refresh_example.gif](gifs/timer_constant_refresh_example.gif)
+![mouse_click_update.gif](gifs/mouse_click_update.gif)
+![selobj_with_mouseclick.gif](gifs/selobj_with_mouseclick.gif)
+
+
 ![display_geometry_names.gif](gifs/display_geometry_names.gif)
-![final_example.gif](gifs/final_example.gif)
-![flounder_camera_1_get.gif](gifs/flounder_camera_1_get.gif)
-![flounder_camera_2_sync.gif](gifs/flounder_camera_2_sync.gif)
-![geometry_pipeline.gif](gifs/geometry_pipeline.gif)
 ![get_attributes.gif](gifs/get_attributes.gif)
 ![keyboard_input_toggle_select.gif](gifs/keyboard_input_toggle_select.gif)
 ![keyboardinput.gif](gifs/keyboardinput.gif)
-![mouse_click_update.gif](gifs/mouse_click_update.gif)
 ![saving_keystrokes_to_names.gif](gifs/saving_keystrokes_to_names.gif)
-![selobj_intro.gif](gifs/selobj_intro.gif)
-![selobj_with_mouseclick.gif](gifs/selobj_with_mouseclick.gif)
+
 ![set_name_attributes.gif](gifs/set_name_attributes.gif)
-![timer_constant_refresh_example.gif](gifs/timer_constant_refresh_example.gif)
 ![wallmaker_with_keyboard.gif](gifs/wallmaker_with_keyboard.gif)
