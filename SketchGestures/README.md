@@ -14,4 +14,4 @@ The cone or stack of spheres will also change radius depending on how long the c
 
 It kind of feels like 'casting magic'.
 
-![counting_intersections_mouse_gestures.gif](gifs/gesture_magic.gif)
+![gesture_magic.gif](gifs/gesture_magic.gif)
