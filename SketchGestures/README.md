@@ -12,6 +12,8 @@ The cone or stack of spheres will also change radius depending on how long the c
 
 ![counting_intersections_mouse_gestures.gif](gifs/counting_intersections_mouse_gestures.gif)
 
-It kind of feels like 'casting magic'.
+This is just an example; if, with a single curve, you can differentiate between multiple types, and also control an intensity, you could start using it in other ways. For example -- drawing a curve copies a geometry, performs a boolean, etc etc.
+
+It kind of feels like 'casting magic'!
 
 ![gesture_magic.gif](gifs/gesture_magic.gif)
