@@ -9,9 +9,14 @@
   - Print out a sheet of fiducial markers from (http://reactivision.sourceforge.net/data/fiducials.pdf), or load it on your phone, and test to see if Reactivision recognizes it. You should see small green numbers in the middle of each marker.
   - Great!
   
-##  Grasshopper/Rhino
+##  Grasshopper Plugins
+
+  - This example uses the plugins (https://www.food4rhino.com/app/telepathy)[Telepathy] and (https://www.food4rhino.com/app/ghowl)[gHowl].
+
+## Grasshopper
 
   - Open `Paperhopper_Simple_CameraOnly_TEMPLATE.gh` in Grasshopper.
+  - The `Find Tags` component will let you, given a fiducial marker tag ID, detect whether or not it exists, and retrieve its location and rotation. 
   
 ## More info
 
