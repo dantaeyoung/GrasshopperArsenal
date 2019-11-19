@@ -9,7 +9,9 @@ If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
 
 ## List of components
-
+* **PoseNet**: Use [PoseOSC](https://github.com/LingDong-/PoseOSC) to send realtime pose estimation data from your camera to Grasshopper!
+* **FaceOSC**: Use [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases) to send facial tracking data to Grasshopper!
+* **reacTIVision**: Use [reacTIVision](http://reactivision.sourceforge.net/#files) to detect fiducial tags and their movement!
 * **PostUploader**: Use C# to do a POST request to a REST api (namely, to upload a file to imagebin.ca).
 * **ScreenshotTaker**: Python-activated Rhino command to do ViewCaptureToFile.
 * **LispHopper**: Lisp (Hy), Python, and Grasshopper. What's not to like?
