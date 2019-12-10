@@ -8,8 +8,13 @@
 //
 
 const { ipcRenderer } = require('electron')
+var Events = require('./Events.js');
 
 ipcRenderer.on('echoserver::log', (event, msg) => {
     console.log(msg);
     console.log("AAA");
 });
+
+
+Events.setRandomGradient();
+

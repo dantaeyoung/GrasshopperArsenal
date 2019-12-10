@@ -4,28 +4,40 @@ html, body {
 	height: 100%;
 }
 body {
-    background-color: pink;
     font-family: 'Karla', sans-serif;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+
+
 }
 .flexcontainer {
 	height:100vh;
 	display: flex;
 	align-items: stretch;
-	justify-content: center;
 	flex-direction: column;
-    padding: 0px 10vw;
+    padding: 0px 8vw;
 }
 
 #header {
     border-bottom: 2px solid black;
-    margin-bottom: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px;
 }
 #sections {
 	display: flex;
 	justify-content: center;
-	flex-direction: row;
+	flex-direction: column;
+    flex-grow: 1;
 }
 section {
+    border:1px dotted black;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+section#rc {
     flex-grow: 1;
 }
 .centerdiv {
@@ -34,9 +46,10 @@ section {
 
 #footer {
     border-top: 2px solid black;
-    margin-top: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px;
 }
 
-* {
-    border: 1px solid red;
-}
+.large {  font-size: 1.3em; }
+.caption {  font-size: 0.7em; }
+.strong { font-weight: bold; }
