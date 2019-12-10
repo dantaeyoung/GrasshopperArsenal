@@ -1,0 +1,42 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+body {
+    background-color: pink;
+    font-family: 'Karla', sans-serif;
+}
+.flexcontainer {
+	height:100vh;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+    padding: 0px 10vw;
+}
+
+#header {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+#sections {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+section {
+    flex-grow: 1;
+}
+.centerdiv {
+}
+
+
+#footer {
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+* {
+    border: 1px solid red;
+}
