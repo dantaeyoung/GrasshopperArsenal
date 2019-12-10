@@ -21,7 +21,7 @@ echoserver.startServer = function(opts, logfunction) {
     echoserver.wss.on('connection', function connection(ws) {
         logfunction("SERVER: someone connected to us!");
         ws.on('message', function incoming(data) {
-            logfunction("SERVER: received data: "+ data);
+            logfunction("Rebroadcasted data: "+ data);
             echoserver.wss.clients.forEach(function each(client) {
                 if(client.readyState === WebSocket.OPEN) {
                     if (client !== ws) {

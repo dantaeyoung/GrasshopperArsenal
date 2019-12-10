@@ -39,6 +39,8 @@ section {
 
 section#rc {
     flex-grow: 1;
+    height: 40vh;
+    overflow: scroll;
 }
 .centerdiv {
 }

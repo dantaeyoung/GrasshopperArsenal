@@ -9,12 +9,16 @@
 
 const { ipcRenderer } = require('electron')
 var Events = require('./Events.js');
+var $ = require('jquery');
 
 ipcRenderer.on('echoserver::log', (event, msg) => {
     console.log(msg);
-    console.log("AAA");
-});
+    $('<div class=msg>' + msg + '</div>').prependTo('#recentmessages');
 
+    var maxMessages = 20
+    var toRemove = $("#recentmessages").find(".msg").length - maxMessages;
+    $("#recentmessages").find(".msg:nth-last-child(-n+" + toRemove + ")").remove();
+});
 
 Events.setRandomGradient();
 
