@@ -1,8 +1,9 @@
 # WebsocketEchoServer
 
-1. Download and run Binary for Websocket Echo Server
+This is an Electron app that creates a Websocket echo server. The goal of the server is simple; it echoes and rebroadcasts any message it receives. The primary goal of this server is to ferry messages between a website and Grasshopper -- for example, between a Teachable Machine model and Grasshopper.
+
+Download v0.1 Windows x64 binary for Websocket Echo Server:
 https://drive.google.com/open?id=1fDdt-cb1uCWdAxWY4Vnz-bHosD1dYfXX
 
-2. Use https://teachable-machine-socket.glitch.me/ To load Teachable Machine model
+For more info on how to use this, go to https://github.com/dantaeyoung/GrasshopperArsenal/edit/master/TeachableMachine/README.md
 
-3. Use Bengesht to listen on ws://localhost:8080
