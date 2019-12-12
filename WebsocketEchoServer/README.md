@@ -7,3 +7,6 @@ https://drive.google.com/open?id=1fDdt-cb1uCWdAxWY4Vnz-bHosD1dYfXX
 
 For more info on how to use this, go to https://github.com/dantaeyoung/GrasshopperArsenal/edit/master/TeachableMachine/README.md
 
+### Building WebsocketEchoServer from source:
+
+Use [`electron-packager`](https://github.com/electron/electron-packager): `electron-packager .`
