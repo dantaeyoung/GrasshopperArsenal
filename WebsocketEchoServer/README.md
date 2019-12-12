@@ -9,4 +9,6 @@ For more info on how to use this, go to https://github.com/dantaeyoung/Grasshopp
 
 ### Building WebsocketEchoServer from source:
 
-Use [`electron-packager`](https://github.com/electron/electron-packager): `electron-packager .`
+Use [`electron-packager`](https://github.com/electron/electron-packager).
+- `npm install electron-packager -g` 
+- `electron-packager .`
