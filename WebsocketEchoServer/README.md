@@ -7,7 +7,7 @@ https://drive.google.com/open?id=1fDdt-cb1uCWdAxWY4Vnz-bHosD1dYfXX
 
 Websocket server location: `ws://127.0.0.1:8080`
 
-For more info on how to use this, go to https://github.com/dantaeyoung/GrasshopperArsenal/edit/master/TeachableMachine/README.md
+For more info on how to use this, go to https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/TeachableMachine/README.md
 
 ### Building WebsocketEchoServer from source:
 
