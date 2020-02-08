@@ -1,6 +1,6 @@
 ## SoundTower
 
-![Soundtower.gif](https://github.com/dantaeyoung/GrasshopperArsenal/edit/master/SoundTower/soundtower.gif)
+![Soundtower.gif](https://github.com/dantaeyoung/GrasshopperArsenal/blob/master/SoundTower/soundtower.gif)
 
 This plugin uses the Firefly plugin. 
 
