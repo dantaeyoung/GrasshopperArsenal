@@ -9,6 +9,8 @@ If you'd like to chat, I'm at @dantaeyoung on Twitter!
 
 
 ## List of components
+* **GoogleTranslate**: Use Google Translate to........... translate text!
+![GoogleTranslate.png](https://raw.githubusercontent.com/provolot/GrasshopperArsenal/master/GoogleTranslate/GoogleTranslate.png)
 * **GrasshopperToFirebase**: Use [FirebaseListener](https://github.com/andrewheumann/FirebaseListener) to connect Grasshopper and Firebase!
 * **PoseNet**: Use [PoseOSC](https://github.com/LingDong-/PoseOSC) to send realtime pose estimation data from your camera to Grasshopper!
 * **FaceOSC**: Use [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases) to send facial tracking data to Grasshopper!
