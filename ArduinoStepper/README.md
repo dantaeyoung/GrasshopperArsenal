@@ -13,6 +13,8 @@ Materials:
 
 On Amazon as of 2023, this is sold as a package (https://www.amazon.com/gp/product/B072N4FMRN). The CNC shield alone can be bought here (https://www.amazon.com/gp/product/B07DXNZ9PS).
 
-`Stepper_Test` controls the Arduino code the test the stepper motors.
+`Stepper_Test` contains Arduino code that test the stepper motors.
+`Arduino_CNCshieldv3_TwoStepper_Input` contains Arduino code that allows control via serial input.
+
 
 
